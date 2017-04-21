@@ -1,0 +1,19 @@
+---
+
+
+dependencies: []
+
+galaxy_info:
+  author: TheDumbTechGuy
+  description: Configure unattended upgrades for Linux.
+  company: "Half Tree Labs"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+    - name: Ubuntu
+      versions:
+      - all
+  galaxy_tags:
+    - updates
+    - security
+    - patches

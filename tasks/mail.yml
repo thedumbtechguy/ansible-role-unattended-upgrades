@@ -1,0 +1,9 @@
+---
+
+- name: ensure mailx is installed
+  apt:
+    name: bsd-mailx
+    state: present 
+    update_cache: yes
+  become: true
+

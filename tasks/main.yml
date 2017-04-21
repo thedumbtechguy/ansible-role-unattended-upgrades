@@ -1,0 +1,5 @@
+---
+
+- include: unattended-upgrades.yml
+  tags: 
+    - unattended_upgrades

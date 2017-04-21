@@ -1,0 +1,34 @@
+---
+
+- name: ensure unattended-upgrades is installed
+  apt:
+    name: unattended-upgrades
+    state: present 
+    update_cache: yes
+  become: true
+
+- name: install reboot dependencies
+  include: reboot.yml
+  when: unattended_automatic_reboot
+
+- name: install unattended_mail dependencies
+  include: mail.yml
+  when: "unattended_mail|bool == True"
+
+- name: create APT auto-upgrades configuration
+  copy:
+    src: auto-upgrades 
+    dest: /etc/apt/apt.conf.d/20auto-upgrades
+    owner: root 
+    group: root 
+    mode: 0644
+  become: true
+
+- name: create unattended-upgrades configuration
+  template:
+    src: unattended-upgrades.j2 
+    dest: /etc/apt/apt.conf.d/50unattended-upgrades
+    owner: root 
+    group: root 
+    mode: 0644
+  become: true
