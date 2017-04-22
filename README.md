@@ -1,4 +1,4 @@
-# Ansible Role: setup_unattended_upgrades
+# Ansible Role: Unattended Upgrades
 
 An ansible role to set up unattended upgrades on Ubuntu. Only security updates are enabled by default.
 
