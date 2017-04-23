@@ -99,7 +99,7 @@ MIT / BSD
 
 ## Author Information
 
-This role was created by [Stefan Froelich](https://thedumbtechguy.blogspot.com/).
+This role was created by [thedumbtechguy](https://github.com/thedumbtechguy) | [twitter](https://github.com/thedumbtechguy) | [blog](https://thedumbtechguy.blogspot.com).
 
 ## Credits
 
