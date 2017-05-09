@@ -33,3 +33,13 @@
     group: root 
     mode: 0644
   become: true
+
+- name: create options for conffiles
+  copy:
+    src: options
+    dest: /etc/apt/apt.conf.d/99options
+    owner: root 
+    group: root 
+    mode: 0644
+  become: true
+

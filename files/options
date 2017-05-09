@@ -1,0 +1,7 @@
+// {{ ansible_managed }}
+
+// use existing configuration files if modified, but update with new if not
+Dpkg::Options {
+   "--force-confdef";
+   "--force-confold";
+}
