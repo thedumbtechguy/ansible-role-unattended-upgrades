@@ -12,10 +12,6 @@
   include: reboot.yml
   when: unattended_automatic_reboot
 
-- name: install unattended_mail dependencies
-  include: mail.yml
-  when: "unattended_mail|bool == True"
-
 - name: create APT auto-upgrades configuration
   copy:
     src: auto-upgrades 
